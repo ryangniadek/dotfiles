@@ -1,0 +1,15 @@
+[user]
+	name = Ryan Gniadek
+	email = rpg@redhat.com
+	signingkey = BD0B1E699DFFBA1A
+[push]
+	default = simple
+	autoSetupRemote = true
+[core]
+	editor = vi
+[alias]
+	tree = log --oneline --decorate --all --graph
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main

@@ -1,0 +1,33 @@
+# VT Systems
+Host rlogin
+	HostName rlogin.cs.vt.edu
+	User rgniadek
+	Port 22
+
+Host ilore
+	HostName ilore.cs.vt.edu
+	User rgniadek
+	Port 2222
+
+Host burgs
+	HostName burgs.cs.vt.edu
+	User rgniadek
+	ForwardAgent yes
+
+Host burgs-2
+	ProxyJump burgs
+	User rgniadek
+	HostName burgs-2
+	ForwardAgent yes
+
+Host burgs-3
+	ProxyJump burgs
+	User rgniadek
+	HostName burgs-3
+	ForwardAgent yes
+
+Host burgs-ml
+	ProxyJump burgs
+	User rgniadek
+	HostName burgs-ml
+	ForwardAgent yes
